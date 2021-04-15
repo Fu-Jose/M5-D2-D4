@@ -6,7 +6,7 @@ import uniqid from "uniqid"
 
 const router = express.Router()
 const filename = fileURLToPath(import.meta.url)
-const studentsJSONPath = join(dirname(filename), "students.json")
+const studentsJSONPath = join(dirname(filename), "../data/students.json")
 
 router.get("/", (req, res) => {
     console.log("GET Ok")

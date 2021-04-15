@@ -11,7 +11,7 @@ const thisFilePath = fileURLToPath(import.meta.url);
 const __dirname = dirname(thisFilePath);
 
 const getProjects = () => {
-  const buffer = fs.readFileSync(join(__dirname, "projects.json"));
+  const buffer = fs.readFileSync(join(__dirname, "../data/projects.json"));
   return JSON.parse(buffer.toString());
 };
 
