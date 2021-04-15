@@ -59,7 +59,6 @@ router.post(
       const errors = validationResult(req);
       if (!errors.isEmpty()) {
         const err = new Error();
-        err.message="Something is missing"
         err.errorList = errors;
         err.httpStatusCode = 400;
         next(err);
